@@ -23,6 +23,7 @@ extern "C" {
 #endif
 
 int add(int a, int b);
+int invert_image(char* data, int width, int height, int image_format);
 
 #if defined(c_plusplus) || defined(__cplusplus)
 }
