@@ -37,7 +37,7 @@ int invert_image(char* data, int width, int height, int image_format) {
     cv::Mat src(height, width, CV_8U, data);
     cv::Mat dst;
     
-    cv::invert(src, dst);
+    cv::bitwise_not(src, dst);
     
     
     memcpy(data, dst.ptr(0), sizeof(unsigned char)* width * height * 1);
