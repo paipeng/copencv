@@ -249,7 +249,7 @@ int detect_square(char* data, int width, int height, int image_format, int* dete
     cv::Mat mat(height, width, CV_8U, data);
     cv::Mat resizeMat;
     vector<cv::Point> result;
-    int gauss_filter_size = 5;
+    int gauss_filter_size = 7;
     
     int brightness = check_bright(mat, 0.2);
     printf("brightness: %d\n", brightness);
