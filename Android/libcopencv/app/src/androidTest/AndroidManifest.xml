@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.s2icode.s2iopencv.test">
-    <!-- bugtags百度定位 为了问题数据完好记录和上传，需要本地存储读写权限-->
+    package="com.paipeng.copencv.test">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
