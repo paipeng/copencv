@@ -24,6 +24,7 @@ extern "C" {
 
 int add(int a, int b);
 int invert_image(char* data, int width, int height, int image_format);
+int detect_square(char* data, int width, int height, int image_format, int* square);
 
 #if defined(c_plusplus) || defined(__cplusplus)
 }
