@@ -15,4 +15,6 @@ public class COpenCVApi {
     }
 
     public native String stringFromJNI();
+    public native String getOpenCVVersion();
+    public native String getOpenCVBuildInfo();
 }

@@ -32,6 +32,14 @@ int add(int a, int b) {
     return a + b;
 }
 
+string get_opencv_version() {
+    return CV_VERSION;
+}
+
+string get_opencv_build_info() {
+    return cv::getBuildInformation().c_str();
+}
+
 int invert_image(char* data, int width, int height, int image_format) {
     cv::Mat src(height, width, CV_8U, data);
     cv::Mat dst;

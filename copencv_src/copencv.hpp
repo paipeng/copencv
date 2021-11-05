@@ -17,6 +17,7 @@
 
 
 using namespace std;
+using namespace cv;
 
 #if defined(c_plusplus) || defined(__cplusplus)
 extern "C" {
@@ -25,6 +26,8 @@ extern "C" {
 int add(int a, int b);
 int invert_image(char* data, int width, int height, int image_format);
 int detect_square(char* data, int width, int height, int image_format, int* square);
+string get_opencv_version();
+string get_opencv_build_info();
 
 #if defined(c_plusplus) || defined(__cplusplus)
 }
