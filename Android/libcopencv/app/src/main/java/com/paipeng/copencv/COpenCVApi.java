@@ -17,4 +17,5 @@ public class COpenCVApi {
     public native String stringFromJNI();
     public native String getOpenCVVersion();
     public native String getOpenCVBuildInfo();
+    public native int invertImage(byte[] data, int width, int height, int image_format);
 }
