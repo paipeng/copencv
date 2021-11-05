@@ -2,3 +2,5 @@ MAC/copencv/copencv.xcodeproj/xcuserdata
 Android/libcopencv/gradle
 Java/libcopencv/gradle
 libcopencv.dylib
+local.properties
+Android/libcopencv/app/.cxx
