@@ -23,4 +23,13 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.paipeng.copencv", appContext.getPackageName());
     }
+
+    @Test
+    public void testOpenCV2() {
+        COpenCVApi cOpenCVApi = new COpenCVApi();
+
+        String o = cOpenCVApi.stringFromJNI();
+        System.out.println("StringFromJNI: " + o);
+        assertEquals(o, "Hello from C++");
+    }
 }

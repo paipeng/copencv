@@ -20,20 +20,17 @@ set_target_properties(lib_opencv PROPERTIES IMPORTED_LOCATION ${CMAKE_CURRENT_SO
 set(OPENCV_LINK_DIR "")
 link_directories(${OPENCV_LINK_DIR})
 
-
-include_directories(
-        ../../../../../../copencv_src/
-)
-
 include_directories(
         /usr/local/flac
         include
         src
         ./
+        ../../../../../../copencv_src/
 )
 
 file(GLOB_RECURSE LIB_COPENCV_JNI
         "native-lib.cpp"
+        "copencv_jni.cpp"
         )
 
 file(GLOB_RECURSE LIB_COPENCV
