@@ -1,12 +1,8 @@
 package com.paipeng.copencv;
 
 import android.Manifest;
-import android.content.Context;
 import android.content.pm.PackageManager;
-import android.content.res.AssetManager;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 
 import androidx.core.app.ActivityCompat;
 import androidx.test.InstrumentationRegistry;
@@ -18,12 +14,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-
-import static org.junit.Assert.assertEquals;
 
 @RunWith(AndroidJUnit4.class)
 public class COpenCVApiTest extends TestCase {
